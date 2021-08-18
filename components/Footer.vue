@@ -12,14 +12,14 @@ export default {
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav
         class="-mx-5 -my-2 flex flex-wrap justify-center"
-        aria-label="Footer"
+        :aria-label="$t('ui.footer.aria_label')"
       >
         <div class="px-5 py-2">
           <a
             href="https://www.cypress.io/about"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            About
+            {{ $t('ui.footer.about') }}
           </a>
         </div>
 
@@ -28,7 +28,7 @@ export default {
             href="https://discord.gg/cMjUZg7"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            Discord
+            {{ $t('ui.footer.discord') }}
           </a>
         </div>
 
@@ -37,7 +37,7 @@ export default {
             href="https://github.com/cypress-io/cypress/discussions"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            Discussions
+            {{ $t('ui.footer.discussions') }}
           </a>
         </div>
 
@@ -46,7 +46,7 @@ export default {
             href="https://on.cypress.io/changelog"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            Changelog
+            {{ $t('ui.footer.сhangelog') }}
           </a>
         </div>
 
@@ -55,7 +55,7 @@ export default {
             href="https://on.cypress.io/roadmap"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            Roadmap
+            {{ $t('ui.footer.roadmap') }}
           </a>
         </div>
 
@@ -64,7 +64,7 @@ export default {
             href="https://www.cypress.io/jobs"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            Jobs
+            {{ $t('ui.footer.jobs') }}
           </a>
         </div>
       </nav>
@@ -73,7 +73,7 @@ export default {
           href="https://github.com/cypress-io/cypress"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">GitHub</span>
+          <span class="sr-only">{{ $t('ui.footer.github') }}</span>
           <Icon :name="['fab', 'github']" color="inherit" />
         </a>
 
@@ -81,7 +81,7 @@ export default {
           href="https://www.youtube.com/channel/UC-EOsTo2l2x39e4JmSaWNRQ"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">YouTube</span>
+          <span class="sr-only">{{ $t('ui.footer.youtube') }}</span>
           <Icon :name="['fab', 'youtube']" color="inherit" />
         </a>
 
@@ -89,12 +89,12 @@ export default {
           href="https://twitter.com/Cypress_io"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Twitter</span>
+          <span class="sr-only">{{ $t('ui.footer.twitter') }}</span>
           <Icon :name="['fab', 'twitter']" color="inherit" />
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-500">
-        &copy; 2021 Cypress.io. All rights reserved.
+        &copy; 2021 Cypress.io. {{ $t('ui.footer.all_rights_reserved') }}.
       </p>
     </div>
   </footer>

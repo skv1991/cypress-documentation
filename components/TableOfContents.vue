@@ -5,7 +5,7 @@
       :class="hasBanner ? $style.bannerMargin : ''"
       class="fixed w-sidebar top-16 bottom-0 right-0 pl-4 pr-8 pb-8 overflow-y-auto space-y-4 hide-scroll"
     >
-      <h3 :class="$style.tocHeading">ON THIS PAGE</h3>
+      <h3 :class="$style.tocHeading">{{ $t('ui.toc.title') }}</h3>
       <scrollactive
         :scroll-on-start="false"
         highlight-first-item
@@ -35,7 +35,7 @@
         </li>
       </scrollactive>
       <a href="#" class="text-blue text-sm"
-        ><Icon name="long-arrow-alt-up" color="inherit" /> Back to Top</a
+        ><Icon name="long-arrow-alt-up" color="inherit" /> {{ $t('ui.toc.back_to_top') }}</a
       >
     </nav>
   </div>

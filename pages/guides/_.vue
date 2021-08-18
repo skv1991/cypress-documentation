@@ -88,7 +88,7 @@ export default {
       <div class="main-content-article-wrapper">
         <article class="main-content-article hide-scroll">
           <h1 class="main-content-title">
-            {{ (guide && guide.title) || 'Cypress Documentation' }}
+            {{ (guide && $t(guide.title)) || 'Cypress Documentation' }}
           </h1>
           <nuxt-content :document="guide"></nuxt-content>
           <Footer />

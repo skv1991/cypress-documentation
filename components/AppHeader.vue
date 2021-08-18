@@ -2,12 +2,14 @@
 import AppHeaderMobileSection from './AppHeaderMobileSection.vue'
 import AppSearchAlgolia from './AppSearchAlgolia'
 import Banner from './Banner.vue'
+import AppLangSwitcher from './AppLangSwitcher.vue'
 
 export default {
   components: {
     AppSearchAlgolia,
     Banner,
     AppHeaderMobileSection,
+    AppLangSwitcher,
   },
   props: {
     mobileMenuItems: {
@@ -30,28 +32,30 @@ export default {
       default: undefined,
     },
   },
-  data: () => {
+  data () {
+    const localePath = this.localePath.bind(this);
+
     return {
       navLink: [
         {
-          label: 'Guides',
-          path: '/guides/overview/why-cypress',
+          label: this.$i18n.t('navLink.guides'),
+          path: localePath('/guides/overview/why-cypress'),
         },
         {
-          label: 'API',
-          path: '/api/table-of-contents',
+          label: this.$i18n.t('navLink.api'),
+          path: localePath('/api/table-of-contents'),
         },
         {
-          label: 'Plugins',
-          path: '/plugins',
+          label: this.$i18n.t('navLink.plugins'),
+          path: localePath('/plugins'),
         },
         {
-          label: 'Examples',
-          path: '/examples/examples/recipes',
+          label: this.$i18n.t('navLink.examples'),
+          path: localePath('/examples/examples/recipes'),
         },
         {
-          label: 'FAQ',
-          path: '/faq/questions/using-cypress-faq',
+          label: this.$i18n.t('navLink.faq'),
+          path: localePath('/faq/questions/using-cypress-faq'),
         },
       ],
       isMenuOpen: false,
@@ -82,13 +86,13 @@ export default {
         <div class="relative flex items-center justify-between h-16">
           <div class="flex items-center px-2 lg:px-0">
             <div class="flex-shrink-0">
-              <a href="/">
+              <nuxt-link :to="localePath('/')">
                 <img
                   class="block h-8 w-auto"
                   :src="require('~/assets/cypress-logo.png')"
-                  alt="Cypress Docs Logo"
+                  alt="$t('logo_alt_text')"
                 />
-              </a>
+              </nuxt-link>
             </div>
             <div class="hidden lg:block lg:ml-6">
               <div class="flex space-x-4">
@@ -96,7 +100,7 @@ export default {
                 <nuxt-link
                   v-for="(link, index) in navLink"
                   :key="`header-nav-link-${index}`"
-                  :to="link.path"
+                  :to="localePath(link.path)"
                   :class="
                     isActive(link.path)
                       ? 'bg-gray-700 text-white'
@@ -116,7 +120,12 @@ export default {
               </div>
             </div>
           </div>
+
           <AppSearchAlgolia :options="algoliaSettings" />
+          <AppLangSwitcher />
+          <!-- <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+          <nuxt-link :to="switchLocalePath('ru')">Русский</nuxt-link> -->
+
           <div class="flex lg:hidden">
             <!-- Mobile menu button -->
             <button
@@ -124,7 +133,7 @@ export default {
               aria-expanded="false"
               @click="toggleMenu"
             >
-              <span class="sr-only">Open main menu</span>
+              <span class="sr-only">{{ $t('open_main_menu') }}</span>
               <!-- Icon when menu is closed. -->
               <!--
             Heroicon name: menu

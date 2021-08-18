@@ -1,5 +1,6 @@
 import { getMetaData } from './utils/getMetaData'
 import { redirects } from './redirects'
+import { langs } from './locales/langs'
 
 const meta = getMetaData()
 
@@ -49,7 +50,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/vue-scrollactive', '@/plugins/sanity-client', {src: '@/plugins/fullstory', mode: 'client'}],
+  plugins: [
+    '@/plugins/vue-scrollactive',
+    '@/plugins/sanity-client',
+    { src: '@/plugins/fullstory', mode: 'client' },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -58,11 +63,33 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/fontawesome', '@nuxt/image', 'nuxt-build-optimisations'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
+    '@nuxt/image',
+    'nuxt-build-optimisations',
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxt/content', '@nuxtjs/gtm', '@nuxtjs/sentry'],
+  modules: [
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: langs,
+        lazy: true,
+        langDir: 'locales/',
+        defaultLocale: 'ru',
+        vueI18n: {
+          fallbackLocale: 'en',
+        },
+      },
+    ],
+    '@nuxtjs/axios',
+    '@nuxt/content',
+    '@nuxtjs/gtm',
+    '@nuxtjs/sentry',
+  ],
   sentry: {
     dsn:
       (process.env.CONTEXT === 'production' && process.env.SENTRY_DSN) ||
@@ -102,7 +129,7 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
       },
-      liveEdit: false
+      liveEdit: false,
     },
   },
   /*
@@ -156,6 +183,7 @@ export default {
         'faTimes',
         'faTree',
         'faVideo',
+        'faLanguage',
       ],
       brands: ['faGithub', 'faTwitter', 'faYoutube'],
     },

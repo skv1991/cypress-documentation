@@ -79,7 +79,7 @@ export default {
         locales: langs,
         lazy: true,
         langDir: 'locales/',
-        defaultLocale: 'ru',
+        defaultLocale: 'en',
         vueI18n: {
           fallbackLocale: 'en',
         },

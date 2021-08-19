@@ -14,10 +14,13 @@ export default {
     Footer,
   },
   async asyncData({ $content, app, params, error }) {
-    const path = `/guides/${params.pathMatch || 'index'}`
-    const { algolia: algoliaSettings } = await $content('settings').fetch()
+    //console.log(app.localePath);
+    // const path = app.localePath(`/guides/${params.pathMatch || 'index'}`, app.i18n.locale)
+    const path = `${app.i18n.locale && `/${  app.i18n.locale}`}/guides/${params.pathMatch || 'index'}`
+    //const path = `/guides/${params.pathMatch || 'index'}`
+    const { algolia: algoliaSettings } = await $content(`settings`).fetch()
     const [guide] = await $content({ deep: true }).where({ path }).fetch()
-    const { guides } = await $content('_data/sidebar').fetch()
+    const { guides } = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/sidebar`).fetch()
     const sidebarItems = guides[0].children
 
     if (!guide) {
@@ -41,9 +44,11 @@ export default {
     }
   },
   head() {
+    const $t = this.$i18n.t.bind(this.$i18n)
+
     return {
       title:
-        getTitle(this.guide && this.guide.title) || 'Cypress Documentation',
+        getTitle(this.guide && this.guide.title, $t) || $t('pages.doc_title'),
       meta: this.meta,
       link: [
         {

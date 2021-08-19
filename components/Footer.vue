@@ -46,7 +46,7 @@ export default {
             href="https://on.cypress.io/changelog"
             class="text-base text-gray-500 hover:text-gray-900"
           >
-            {{ $t('ui.footer.сhangelog') }}
+            {{ $t('ui.footer.changelog') }}
           </a>
         </div>
 

@@ -1,0 +1,1002 @@
+{
+  "guides": [
+    {
+      "title": "Гайды",
+      "slug": "guides",
+      "children": [
+        {
+          "title": "Обзор",
+          "slug": "overview",
+          "children": [
+            {
+              "title": "Почему Cypress?",
+              "slug": "why-cypress"
+            },
+            {
+              "title": "Ключевые отличия",
+              "slug": "key-differences"
+            }
+          ]
+        },
+        {
+          "title": "Приступаем к работе",
+          "slug": "getting-started",
+          "children": [
+            {
+              "title": "Установка Cypress",
+              "slug": "installing-cypress"
+            },
+            {
+              "title": "Написание первого теста",
+              "slug": "writing-your-first-test"
+            },
+            {
+              "title": "Тестирование вашего приложения",
+              "slug": "testing-your-app"
+            }
+          ]
+        },
+        {
+          "title": "Ключевые понятия",
+          "slug": "core-concepts",
+          "children": [
+            {
+              "title": "Введение в Cypress",
+              "slug": "introduction-to-cypress"
+            },
+            {
+              "title": "Написание и организация тестов",
+              "slug": "writing-and-organizing-tests"
+            },
+            {
+              "title": "Retry-ability",
+              "slug": "retry-ability"
+            },
+            {
+              "title": "Взаимодействие с элементами",
+              "slug": "interacting-with-elements"
+            },
+            {
+              "title": "Переменные и Алиасы",
+              "slug": "variables-and-aliases"
+            },
+            {
+              "title": "Conditional Testing",
+              "slug": "conditional-testing"
+            },
+            {
+              "title": "Test Runner",
+              "slug": "test-runner"
+            },
+            {
+              "title": "Cypress Studio",
+              "slug": "cypress-studio"
+            }
+          ]
+        },
+        {
+          "title": "Dashboard",
+          "slug": "dashboard",
+          "children": [
+            {
+              "title": "Introduction",
+              "slug": "introduction"
+            },
+            {
+              "title": "Projects",
+              "slug": "projects"
+            },
+            {
+              "title": "Runs",
+              "slug": "runs"
+            },
+            {
+              "title": "Organizations",
+              "slug": "organizations"
+            },
+            {
+              "title": "Users",
+              "slug": "users"
+            },
+            {
+              "title": "Интеграция с Bitbucket",
+              "slug": "bitbucket-integration"
+            },
+            {
+              "title": "Интеграция с GitHub",
+              "slug": "github-integration"
+            },
+            {
+              "title": "Интеграция с GitLab",
+              "slug": "gitlab-integration"
+            },
+            {
+              "title": "Интеграция с Jira",
+              "slug": "jira-integration"
+            },
+            {
+              "title": "Интеграция с Slack",
+              "slug": "slack-integration"
+            },
+            {
+              "title": "Аналитика",
+              "slug": "analytics"
+            },
+            {
+              "title": "Flaky Test Management",
+              "slug": "flaky-test-management"
+            },
+            {
+              "title": "Smart Orchestration",
+              "slug": "smart-orchestration"
+            }
+          ]
+        },
+        {
+          "title": "Гайды",
+          "slug": "guides",
+          "children": [
+            {
+              "title": "Command Line",
+              "slug": "command-line"
+            },
+            {
+              "title": "Module API",
+              "slug": "module-api"
+            },
+            {
+              "title": "Отладка",
+              "slug": "debugging"
+            },
+            {
+              "title": "Сетевые запросы",
+              "slug": "network-requests"
+            },
+            {
+              "title": "Test Retries",
+              "slug": "test-retries"
+            },
+            {
+              "title": "Параллелизация",
+              "slug": "parallelization"
+            },
+            {
+              "title": "Переменные окружения",
+              "slug": "environment-variables"
+            },
+            {
+              "title": "Stubs, Spies, and Clocks",
+              "slug": "stubs-spies-and-clocks"
+            },
+            {
+              "title": "Скриншоты и видео",
+              "slug": "screenshots-and-videos"
+            },
+            {
+              "title": "Запуск браузеров",
+              "slug": "launching-browsers"
+            },
+            {
+              "title": "Кроссбраузерное тестирование",
+              "slug": "cross-browser-testing"
+            },
+            {
+              "title": "Веб безопасность",
+              "slug": "web-security"
+            }
+          ]
+        },
+        {
+          "title": "Стратегии тестирования",
+          "slug": "testing-strategies",
+          "children": [
+            {
+              "title": "Аутентификация через Auth0",
+              "slug": "auth0-authentication"
+            },
+            {
+              "title": "Amazon Cognito Authentication",
+              "slug": "amazon-cognito-authentication"
+            },
+            {
+              "title": "Okta Authentication",
+              "slug": "okta-authentication"
+            },
+            {
+              "title": "Аутентификация через Google",
+              "slug": "google-authentication"
+            },
+            {
+              "title": "Работа с GraphQL",
+              "slug": "working-with-graphql"
+            }
+          ]
+        },
+        {
+          "title": "Непрерывная интеграция",
+          "slug": "continuous-integration",
+          "children": [
+            {
+              "title": "Введение",
+              "slug": "introduction"
+            },
+            {
+              "title": "CI Provider Examples",
+              "slug": "ci-provider-examples"
+            },
+            {
+              "title": "CircleCI",
+              "slug": "circleci"
+            },
+            {
+              "title": "GitHub Actions",
+              "slug": "github-actions"
+            },
+            {
+              "title": "GitLab CI",
+              "slug": "gitlab-ci"
+            },
+            {
+              "title": "Bitbucket Pipelines",
+              "slug": "bitbucket-pipelines"
+            },
+            {
+              "title": "AWS CodeBuild",
+              "slug": "aws-codebuild"
+            }
+          ]
+        },
+        {
+          "title": "Тестирование компонентов",
+          "slug": "component-testing",
+          "children": [
+            {
+              "title": "Введение",
+              "slug": "introduction"
+            },
+            {
+              "title": "Настройка фреймворка",
+              "slug": "framework-configuration"
+            }
+          ]
+        },
+        {
+          "title": "Переход на Cypress",
+          "slug": "migrating-to-cypress",
+          "children": [
+            {
+              "title": "С Protractor",
+              "slug": "protractor"
+            }
+          ]
+        },
+        {
+          "title": "Инструментарий",
+          "slug": "tooling",
+          "children": [
+            {
+              "title": "Интеграция с IDE",
+              "slug": "IDE-integration"
+            },
+            {
+              "title": "Плагины",
+              "slug": "plugins-guide"
+            },
+            {
+              "title": "Reporters",
+              "slug": "reporters"
+            },
+            {
+              "title": "TypeScript",
+              "slug": "typescript-support"
+            },
+            {
+              "title": "Визуальное тестирование",
+              "slug": "visual-testing"
+            },
+            {
+              "title": "Покрытие кода",
+              "slug": "code-coverage"
+            }
+          ]
+        },
+        {
+          "title": "Ссылки",
+          "slug": "references",
+          "children": [
+            {
+              "title": "Ассерты",
+              "slug": "assertions"
+            },
+            {
+              "title": "Конфигурация",
+              "slug": "configuration"
+            },
+            {
+              "title": "Клиентские сертификаты",
+              "slug": "client-certificates"
+            },
+            {
+              "title": "Настройка прокси",
+              "slug": "proxy-configuration"
+            },
+            {
+              "title": "Лучшие практики",
+              "slug": "best-practices"
+            },
+            {
+              "title": "Ошибки",
+              "slug": "error-messages"
+            },
+            {
+              "title": "Bundled Tools",
+              "slug": "bundled-tools"
+            },
+            {
+              "title": "Компромиссы",
+              "slug": "trade-offs"
+            },
+            {
+              "title": "Решение проблем",
+              "slug": "troubleshooting"
+            },
+            {
+              "title": "Лог изменений",
+              "slug": "changelog"
+            },
+            {
+              "title": "Гайд по миграции",
+              "slug": "migration-guide"
+            },
+            {
+              "title": "Дорожная карта",
+              "slug": "roadmap"
+            },
+            {
+              "title": "Эксперименты",
+              "slug": "experiments"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "api": [
+    {
+      "title": "API",
+      "slug": "api",
+      "children": [
+        {
+          "title": "API",
+          "slug": "api",
+          "children": [
+            {
+              "title": "Содержание",
+              "redirect": "/ru/api/table-of-contents"
+            }
+          ]
+        },
+        {
+          "title": "События",
+          "slug": "events",
+          "children": [
+            {
+              "title": "Каталог событий",
+              "slug": "catalog-of-events"
+            }
+          ]
+        },
+        {
+          "title": "Ассерты",
+          "slug": "assertions",
+          "children": [
+            {
+              "title": "Все ассерты",
+              "redirect": "/ru/guides/references/assertions"
+            }
+          ]
+        },
+        {
+          "title": "Комманды",
+          "slug": "commands",
+          "children": [
+            {
+              "title": "and",
+              "slug": "and"
+            },
+            {
+              "title": "as",
+              "slug": "as"
+            },
+            {
+              "title": "blur",
+              "slug": "blur"
+            },
+            {
+              "title": "check",
+              "slug": "check"
+            },
+            {
+              "title": "children",
+              "slug": "children"
+            },
+            {
+              "title": "clear",
+              "slug": "clear"
+            },
+            {
+              "title": "clearCookie",
+              "slug": "clearcookie"
+            },
+            {
+              "title": "clearCookies",
+              "slug": "clearcookies"
+            },
+            {
+              "title": "clearLocalStorage",
+              "slug": "clearlocalstorage"
+            },
+            {
+              "title": "click",
+              "slug": "click"
+            },
+            {
+              "title": "clock",
+              "slug": "clock"
+            },
+            {
+              "title": "closest",
+              "slug": "closest"
+            },
+            {
+              "title": "contains",
+              "slug": "contains"
+            },
+            {
+              "title": "dblclick",
+              "slug": "dblclick"
+            },
+            {
+              "title": "debug",
+              "slug": "debug"
+            },
+            {
+              "title": "document",
+              "slug": "document"
+            },
+            {
+              "title": "each",
+              "slug": "each"
+            },
+            {
+              "title": "end",
+              "slug": "end"
+            },
+            {
+              "title": "eq",
+              "slug": "eq"
+            },
+            {
+              "title": "exec",
+              "slug": "exec"
+            },
+            {
+              "title": "filter",
+              "slug": "filter"
+            },
+            {
+              "title": "find",
+              "slug": "find"
+            },
+            {
+              "title": "first",
+              "slug": "first"
+            },
+            {
+              "title": "fixture",
+              "slug": "fixture"
+            },
+            {
+              "title": "focus",
+              "slug": "focus"
+            },
+            {
+              "title": "focused",
+              "slug": "focused"
+            },
+            {
+              "title": "get",
+              "slug": "get"
+            },
+            {
+              "title": "getCookie",
+              "slug": "getcookie"
+            },
+            {
+              "title": "getCookies",
+              "slug": "getcookies"
+            },
+            {
+              "title": "go",
+              "slug": "go"
+            },
+            {
+              "title": "hash",
+              "slug": "hash"
+            },
+            {
+              "title": "hover",
+              "slug": "hover"
+            },
+            {
+              "title": "intercept",
+              "slug": "intercept"
+            },
+            {
+              "title": "invoke",
+              "slug": "invoke"
+            },
+            {
+              "title": "its",
+              "slug": "its"
+            },
+            {
+              "title": "last",
+              "slug": "last"
+            },
+            {
+              "title": "location",
+              "slug": "location"
+            },
+            {
+              "title": "log",
+              "slug": "log"
+            },
+            {
+              "title": "next",
+              "slug": "next"
+            },
+            {
+              "title": "nextAll",
+              "slug": "nextall"
+            },
+            {
+              "title": "nextUntil",
+              "slug": "nextuntil"
+            },
+            {
+              "title": "not",
+              "slug": "not"
+            },
+            {
+              "title": "parent",
+              "slug": "parent"
+            },
+            {
+              "title": "parents",
+              "slug": "parents"
+            },
+            {
+              "title": "parentsUntil",
+              "slug": "parentsuntil"
+            },
+            {
+              "title": "pause",
+              "slug": "pause"
+            },
+            {
+              "title": "prev",
+              "slug": "prev"
+            },
+            {
+              "title": "prevAll",
+              "slug": "prevall"
+            },
+            {
+              "title": "prevUntil",
+              "slug": "prevuntil"
+            },
+            {
+              "title": "readFile",
+              "slug": "readfile"
+            },
+            {
+              "title": "reload",
+              "slug": "reload"
+            },
+            {
+              "title": "request",
+              "slug": "request"
+            },
+            {
+              "title": "rightclick",
+              "slug": "rightclick"
+            },
+            {
+              "title": "root",
+              "slug": "root"
+            },
+            {
+              "title": "route",
+              "slug": "route"
+            },
+            {
+              "title": "screenshot",
+              "slug": "screenshot"
+            },
+            {
+              "title": "scrollIntoView",
+              "slug": "scrollintoview"
+            },
+            {
+              "title": "scrollTo",
+              "slug": "scrollto"
+            },
+            {
+              "title": "select",
+              "slug": "select"
+            },
+            {
+              "title": "server",
+              "slug": "server"
+            },
+            {
+              "title": "session",
+              "slug": "session"
+            },
+            {
+              "title": "setCookie",
+              "slug": "setcookie"
+            },
+            {
+              "title": "shadow",
+              "slug": "shadow"
+            },
+            {
+              "title": "should",
+              "slug": "should"
+            },
+            {
+              "title": "siblings",
+              "slug": "siblings"
+            },
+            {
+              "title": "spread",
+              "slug": "spread"
+            },
+            {
+              "title": "spy",
+              "slug": "spy"
+            },
+            {
+              "title": "stub",
+              "slug": "stub"
+            },
+            {
+              "title": "submit",
+              "slug": "submit"
+            },
+            {
+              "title": "task",
+              "slug": "task"
+            },
+            {
+              "title": "then",
+              "slug": "then"
+            },
+            {
+              "title": "tick",
+              "slug": "tick"
+            },
+            {
+              "title": "title",
+              "slug": "title"
+            },
+            {
+              "title": "trigger",
+              "slug": "trigger"
+            },
+            {
+              "title": "type",
+              "slug": "type"
+            },
+            {
+              "title": "uncheck",
+              "slug": "uncheck"
+            },
+            {
+              "title": "url",
+              "slug": "url"
+            },
+            {
+              "title": "viewport",
+              "slug": "viewport"
+            },
+            {
+              "title": "visit",
+              "slug": "visit"
+            },
+            {
+              "title": "wait",
+              "slug": "wait"
+            },
+            {
+              "title": "window",
+              "slug": "window"
+            },
+            {
+              "title": "within",
+              "slug": "within"
+            },
+            {
+              "title": "wrap",
+              "slug": "wrap"
+            },
+            {
+              "title": "writeFile",
+              "slug": "writefile"
+            }
+          ]
+        },
+        {
+          "title": "Утилиты",
+          "slug": "utilities",
+          "children": [
+            {
+              "title": "_",
+              "slug": "_"
+            },
+            {
+              "title": "$",
+              "slug": "$"
+            },
+            {
+              "title": "Blob",
+              "slug": "blob"
+            },
+            {
+              "title": "minimatch",
+              "slug": "minimatch"
+            },
+            {
+              "title": "Promise",
+              "slug": "promise"
+            },
+            {
+              "title": "sinon",
+              "slug": "sinon"
+            }
+          ]
+        },
+        {
+          "title": "Cypress API",
+          "slug": "cypress-api",
+          "children": [
+            {
+              "title": "Commands",
+              "slug": "custom-commands"
+            },
+            {
+              "title": "Cookies",
+              "slug": "cookies"
+            },
+            {
+              "title": "Screenshot",
+              "slug": "screenshot-api"
+            },
+            {
+              "title": "SelectorPlayground",
+              "slug": "selector-playground-api"
+            },
+            {
+              "title": "Server",
+              "slug": "cypress-server"
+            },
+            {
+              "title": "arch",
+              "slug": "arch"
+            },
+            {
+              "title": "browser",
+              "slug": "browser"
+            },
+            {
+              "title": "config",
+              "slug": "config"
+            },
+            {
+              "title": "currentTest",
+              "slug": "currenttest"
+            },
+            {
+              "title": "dom",
+              "slug": "dom"
+            },
+            {
+              "title": "env",
+              "slug": "env"
+            },
+            {
+              "title": "isBrowser",
+              "slug": "isbrowser"
+            },
+            {
+              "title": "isCy",
+              "slug": "iscy"
+            },
+            {
+              "title": "log",
+              "slug": "cypress-log"
+            },
+            {
+              "title": "platform",
+              "slug": "platform"
+            },
+            {
+              "title": "session",
+              "slug": "session"
+            },
+            {
+              "title": "spec",
+              "slug": "spec"
+            },
+            {
+              "title": "testingType",
+              "slug": "testing-type"
+            },
+            {
+              "title": "version",
+              "slug": "version"
+            }
+          ]
+        },
+        {
+          "title": "Plugins",
+          "slug": "plugins",
+          "children": [
+            {
+              "title": "Writing a Plugin",
+              "slug": "writing-a-plugin"
+            },
+            {
+              "title": "Configuration",
+              "slug": "configuration-api"
+            },
+            {
+              "title": "Preprocessors",
+              "slug": "preprocessors-api"
+            },
+            {
+              "title": "Before Run",
+              "slug": "before-run-api"
+            },
+            {
+              "title": "After Run",
+              "slug": "after-run-api"
+            },
+            {
+              "title": "Before Spec",
+              "slug": "before-spec-api"
+            },
+            {
+              "title": "After Spec",
+              "slug": "after-spec-api"
+            },
+            {
+              "title": "Browser Launching",
+              "slug": "browser-launch-api"
+            },
+            {
+              "title": "After Screenshot",
+              "slug": "after-screenshot-api"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "title": "Плагины",
+      "slug": "plugins"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Примеры",
+      "slug": "examples",
+      "children": [
+        {
+          "title": "Примеры",
+          "slug": "examples",
+          "children": [
+            {
+              "title": "Готовые рецепты",
+              "slug": "recipes"
+            },
+            {
+              "title": "Учебники",
+              "slug": "tutorials"
+            },
+            {
+              "title": "Приложения",
+              "slug": "applications"
+            },
+            {
+              "title": "Docker",
+              "slug": "docker"
+            },
+            {
+              "title": "Тренинги",
+              "slug": "workshop"
+            },
+            {
+              "title": "Проекты",
+              "slug": "projects-media"
+            }
+          ]
+        },
+        {
+          "title": "Медиа",
+          "slug": "media",
+          "children": [
+            {
+              "title": "Курсы",
+              "slug": "courses-media"
+            },
+            {
+              "title": "Вебинары",
+              "slug": "webinars-media"
+            },
+            {
+              "title": "Блоги",
+              "slug": "blogs-media"
+            },
+            {
+              "title": "Talks",
+              "slug": "talks-media"
+            },
+            {
+              "title": "Подкасты",
+              "slug": "podcasts-media"
+            },
+            {
+              "title": "Скринкасты",
+              "slug": "screencasts-media"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "title": "FAQ",
+      "slug": "faq",
+      "children": [
+        {
+          "title": "FAQ",
+          "slug": "questions",
+          "children": [
+            {
+              "title": "Использование Cypress",
+              "slug": "using-cypress-faq"
+            },
+            {
+              "title": "Общие вопросы",
+              "slug": "general-questions-faq"
+            },
+            {
+              "title": "Dashboard",
+              "slug": "dashboard-faq"
+            },
+            {
+              "title": "Company",
+              "slug": "company-faq"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

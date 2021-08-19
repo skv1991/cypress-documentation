@@ -14,12 +14,12 @@ export default {
     Footer,
   },
   async asyncData({ $content, app, params, redirect, error }) {
-    const path = `/api/${params.pathMatch || 'index'}`
+    const path = `${app.i18n.locale && `/${  app.i18n.locale}`}/api/${params.pathMatch || 'index'}`
     const { algolia: algoliaSettings } = await $content('settings').fetch()
     const [apiPageContent] = await $content({ deep: true })
       .where({ path })
       .fetch()
-    const { api } = await $content('_data/sidebar').fetch()
+    const { api } = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/sidebar`).fetch()
     const sidebarItems = api[0].children
 
     if (!apiPageContent) {
@@ -35,6 +35,7 @@ export default {
     const [rawContent] = await $content({ deep: true, text: true })
       .where({ path })
       .fetch()
+      // @TODO localize
     const metaDescription = isApiToc
       ? 'Cypress API Documentation Table of Contents '
       : await getMetaDescription(rawContent.text)

@@ -14,10 +14,10 @@ export default {
     Badge,
   },
   async asyncData({ $content, app, params, error }) {
-    const path = `/examples/${params.pathMatch || 'index'}`
+    const path = `${app.i18n.locale && `/${  app.i18n.locale}`}/examples/${params.pathMatch || 'index'}`
     const { algolia: algoliaSettings } = await $content('settings').fetch()
     const [exampleItem] = await $content({ deep: true }).where({ path }).fetch()
-    const { examples } = await $content('_data/sidebar').fetch()
+    const { examples } = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/sidebar`).fetch()
     const sidebarItems = examples[0].children
     let mediaObject = {}
     let title = ''
@@ -35,14 +35,16 @@ export default {
       // and put them under a `courses` key. No other
       // example page needs this type of data reformatting.
       if (params.pathMatch.includes('courses')) {
-        const { courses } = await $content(`_data/${mediaType}`).fetch()
+        // const { courses } = await $content(`_data/${mediaType}`).fetch()
+        const { courses } = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/${mediaType}`).fetch()
 
         mediaObject = {
           slug: 'courses',
           courses,
         }
       } else {
-        mediaObject = await $content(`_data/${mediaType}`).fetch()
+        // mediaObject = await $content(`_data/${mediaType}`).fetch()
+        mediaObject = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/${mediaType}`).fetch()
       }
 
       title = mediaType[0].toUpperCase() + mediaType.slice(1)

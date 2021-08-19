@@ -12,10 +12,10 @@ export default {
     Footer,
   },
   async asyncData({ $content, app, params, error }) {
-    const path = `/plugins/${params.pathMatch || 'index'}`
+    const path = `${app.i18n.locale && `/${  app.i18n.locale}`}/plugins/${params.pathMatch || 'index'}`
     const { algolia: algoliaSettings } = await $content('settings').fetch()
     const [pluginDoc] = await $content({ deep: true }).where({ path }).fetch()
-    const { plugins } = await $content('_data/plugins').fetch()
+    const { plugins } = await $content(`_data${app.i18n.locale && `/${  app.i18n.locale}`}/plugins`).fetch()
 
     if (!pluginDoc) {
       return error({ statusCode: 404, message: 'Plugin Doc not found' })
